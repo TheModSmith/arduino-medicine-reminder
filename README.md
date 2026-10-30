@@ -4,7 +4,7 @@ A small, 3D-printed medicine reminder built around a **LOLIN D1 mini v4 (ESP8266
 
 It works on its own after connecting to Wi-Fi for time sync. **Home Assistant is optional**: MQTT discovery adds a daily time setting, colour settings, status, and buttons to check the LEDs or dismiss a reminder.
 
-**STL downloads:** Coming soon.
+**STL downloads:** (https://makerworld.com/en/models/3519608-smart-medicine-reminder-arduino-home-assistant#profileId-4022794)
 
 ## Quick start
 
