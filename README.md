@@ -18,6 +18,16 @@ It works on its own after connecting to Wi-Fi for time sync. **Home Assistant is
 4. Open `MedicineReminder.ino` in Arduino IDE. Select **LOLIN(WEMOS) D1 R2 & mini** and upload through the D1 mini's own USB-C socket.
 5. At 21:00 local time by default, the LEDs turn red. Press the button to acknowledge; they flash green for three seconds and turn off until the next day's reminder.
 
+## Parts used
+
+- 1 × **LOLIN D1 mini v4.0.0** (ESP8266, USB-C)
+- 1 × **SparkFun BOB-15100** USB-C breakout for power input
+- **14 × WS2812B LEDs** cut from a 10 mm-wide, 60 LEDs/m strip
+- 1 × **NZN Electronics SW-TACT-12X12-4P** tactile button
+- **6 × M2.5 × 8 mm, 90° countersunk screws** (four for the case, two for the USB-C board)
+- **2 × M2 × 8 mm, 90° countersunk screws** for the D1 mini
+- **White PLA** for the base, lid, button cover and cap; **orange PLA** for the bottle
+  
 ## Essential wiring
 
 | Connection | D1 mini pad |
@@ -26,8 +36,6 @@ It works on its own after connecting to Wi-Fi for time sync. **Home Assistant is
 | Button, one contact | **14 / SCK** (GPIO14, Arduino D5) |
 | Button, other contact | **GND** |
 | LED strip and D1 mini power | **5 V** from the USB-C breakout, with a common GND |
-
-Use one leg from each connected pair on the four-leg button. Put a 330–470 Ω resistor in series with the LED data wire, and a 500–1000 µF capacitor across 5 V and GND near the LED strip. Keep all grounds connected together.
 
 ## Change the reminder time
 
